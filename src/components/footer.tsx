@@ -1,17 +1,50 @@
-import React from 'react'
+import React from 'react';
 
-function footer() {
+function Footer() {
   return (
-    <div className='w-full h-[95%] flex justify-between gap-5 bg-[#e3e3e3] rounded-tl-4xl rounded-tr-3xl -mt-[1.5vw] p-20 border-1 border-[#2e2e2e]'>
-        <div className='w-1/2 h-[100%] flex flex-col justify-between'>
-            <h1 className='text-[5vw] font-bold tracking-tighter uppercase leading-none -mb-20 text-gray-700'>Footer</h1>
-            <h3 className='font-semibold text-[2vw] text-gray-800'>Pamflet.</h3>
+    <footer className="w-full bg-[#e3e3e3] rounded-tl-[3rem] rounded-tr-[3rem] border-t border-[#2e2e2e] px-20 py-16 -mt-[3vw]">
+      <div className="flex flex-col md:flex-row justify-between gap-10">
+
+        {/* Brand Info */}
+        <div className="md:w-1/2 flex flex-col justify-between">
+          <h1 className="text-[4vw] font-extrabold uppercase text-gray-700 leading-tight tracking-tighter">
+            Pamflet
+          </h1>
+          <p className="mt-2 text-gray-700 text-base max-w-sm">
+            Memorize anything with interactive flashcards. Create, study, and share your decks.
+          </p>
         </div>
-        <div className='w-1/2 text-[5vw] font-light tracking-tighter uppercase leading-none -mb-20 text-gray-700'>
-            <h1>Lorem ipsum.</h1>
+
+        {/* Navigation + Social */}
+        <div className="md:w-1/2 flex flex-col gap-6">
+          {/* Navigation */}
+          <div>
+            <h2 className="text-gray-800 font-semibold mb-2 text-lg">Explore</h2>
+            <ul className="flex flex-col space-y-1 text-sm text-gray-600">
+              <li><a href="#features" className="hover:underline">Features</a></li>
+              <li><a href="#about" className="hover:underline">About</a></li>
+              <li><a href="/login" className="hover:underline">Login</a></li>
+              <li><a href="/signup" className="hover:underline">Signup</a></li>
+            </ul>
+          </div>
+
+          {/* Social links (optional) */}
+          <div>
+            <h2 className="text-gray-800 font-semibold mb-2 text-lg">Connect</h2>
+            <div className="flex space-x-4 text-gray-600 text-sm">
+              <a href="https://github.com/your-org" target="_blank" rel="noopener noreferrer" className="hover:underline">GitHub</a>
+              <a href="#" className="hover:underline">Twitter</a>
+            </div>
+          </div>
         </div>
-    </div>
-  )
+      </div>
+
+      {/* Divider */}
+      <div className="border-t border-gray-300 mt-10 pt-6 text-gray-500 text-xs text-center">
+        © {new Date().getFullYear()} Pamflet. All rights reserved.
+      </div>
+    </footer>
+  );
 }
 
-export default footer
+export default Footer;

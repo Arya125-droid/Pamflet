@@ -95,9 +95,9 @@ function App() {
       {/* Toggle/Route the below components instead if needed */}
       {/* <Foreground />
       <Background /> */}
-      <Login onLogin={handleLogin} loading={loading} error={error || undefined} />
+      {/* <Login onLogin={handleLogin} loading={loading} error={error || undefined} /> */}
       {/* <Signup onSignup={handleSignup} loading={loading} error={error || undefined} /> */}
-      {/* <Landingpage /> */}
+      <Landingpage />
       {/* <Album deckTitle={deckTitle} cards={cards} onEdit={(id) => console.log('Edit', id)} /> */}
     </div>
   );
