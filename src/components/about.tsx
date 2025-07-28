@@ -5,7 +5,7 @@ function about() {
     <>
         <div className='w-full py-20 bg-[#e2e2e2] border-1 border-[#2e2e2e] rounded-tl-4xl rounded-tr-3xl -mt-[1.5vw]'>
             <h1 className='px-9 w-[60%]'>
-                <span className='text-[4vw] font-medium text-[#2e2e2e] leading-none tracking-tight'>
+                <span className='text-[4vw] font-medium text-[#4e4e4e] leading-none tracking-tight'>
                     Create, study, and share smart flashcards with rich formatting.<br></br>
                     Your learning, your way
                 </span>
@@ -17,7 +17,7 @@ function about() {
                         <div className='w-2 h-2 bg-zinc-200 rounded-full'></div>
                     </button>
                 </div>
-                <div className='flex justify-center items-center w-2/3 h-[70vh] m-[5vw] p-10 tetx-zinc-900 text-[2vw] rounded-4xl border-2 text-[#2e2e2e]'>
+                <div className='flex justify-center items-center w-2/3 h-[70vh] m-[5vw] p-10 tetx-zinc-900 text-[2vw] rounded-4xl border-2 text-[#6e6e6e]'>
                 Pamflet was built with one goal in mind—helping learners absorb and retain knowledge more effectively.
                 Whether you are preparing for exams, learning a language, or organizing your ideas, Pamflet adapts to your workflow.
                 </div>

@@ -67,7 +67,7 @@ function Foreground() {
         {/* Create New Deck button */}
         <button
           onClick={handleCreateNewDeck}
-          className="w-80 h-[400px] bg-zinc-300/40 rounded-[40px] flex flex-col items-center justify-center text-zinc-600 text-xl font-semibold hover:bg-zinc-400/40 transition-colors cursor-pointer select-none"
+          className="w-80 h-[400px] bg-zinc-300/80 rounded-[40px] flex flex-col items-center justify-center text-zinc-600 text-xl font-semibold hover:bg-zinc-400/40 transition-colors cursor-pointer select-none"
           aria-label="Create new deck"
           title="Create New Deck"
         >

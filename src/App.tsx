@@ -6,6 +6,7 @@ import Login from './components/login';
 import Signup from './components/signup';
 import Landingpage from './components/landingpage';
 import Album from './components/album';
+import Userprofile from './components/userprofile';
 
 const initialCards = [
   { id: 1, frontText: 'Front of card 1', backText: 'Back of card 1' },
@@ -99,6 +100,7 @@ function App() {
       {/* <Signup onSignup={handleSignup} loading={loading} error={error || undefined} /> */}
       <Landingpage />
       {/* <Album deckTitle={deckTitle} cards={cards} onEdit={(id) => console.log('Edit', id)} /> */}
+      {/* <Userprofile/> */}
     </div>
   );
 }

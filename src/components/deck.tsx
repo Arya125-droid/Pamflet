@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FaFontAwesomeFlag } from "react-icons/fa";
+import { HiFlag } from "react-icons/hi";
 import Cards from './cards';
 
 type Priority = 'High' | 'Medium' | 'Low';
@@ -73,18 +74,18 @@ function Deck({
       <div ref={dropdownRef} className="absolute top-3 left-3 p-3 z-51">
         <button
           onClick={() => setOpen(!open)}
-          className="flex items-center justify-center w-8 h-8 rounded-full bg-gray-300 hover:bg-gray-400 focus:outline-none"
+          className="flex items-center justify-center w-8 h-8 rounded-full bg-[#e6e6e6] hover:bg-[#e2e2e2] focus:outline-none"
           aria-label="Toggle priority dropdown"
         >
-          <FaFontAwesomeFlag />
+          <HiFlag />
         </button>
 
         {open && (
-          <ul className="mt-1 w-32 bg-white border border-gray-300 rounded shadow-md absolute z-30">
+          <ul className="mt-1 w-32 p-2 bg-white border border-gray-300 shadow-md absolute z-30 rounded-lg">
             {priorities.map(p => (
               <li
                 key={p}
-                className="cursor-pointer px-3 py-1 hover:bg-gray-200 font-semibold text-zinc-600"
+                className="cursor-pointer px-3 py-1 rounded-md hover:bg-gray-200 hover:border-2 hover:border-[#2e2e2e] transition-all duration-300 ease-in-out font-semibold text-zinc-600"
                 onClick={() => handleSelectPriority(p)}
               >
                 {p}
@@ -103,7 +104,7 @@ function Deck({
       <div className="flex justify-around border-t border-zinc-400 pt-3">
         <button
           onClick={onEdit}
-          className="px-6 py-2 rounded-full bg-blue-600/60 text-white hover:bg-blue-700/60 transition-colors focus:outline-none"
+          className="px-6 py-2 rounded-xl bg-[#0b70f4cb] font-bold text-white hover:bg-blue-700/60 transition-colors focus:outline-none"
           aria-label="Edit deck"
           type="button"
         >
